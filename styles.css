@@ -1,0 +1,55 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  color: #333; /* Warna teks abu-abu */
+}
+
+/* Header styles with background image */
+.header {
+  background-image: url("bola.webp"); /* Ganti dengan path gambar header Anda */
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Sesuaikan dengan tinggi gambar */
+  text-align: center;
+}
+
+/* Navbar styles */
+.header nav ul {
+  list-style: none;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7); /* Warna putih transparan untuk navbar */
+}
+
+.header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: #333; /* Warna teks abu-abu */
+}
+
+.header nav ul li a:hover {
+  color: #000; /* Warna teks hitam saat hover */
+}
+
+/* Content styles */
+.content {
+  padding: 20px;
+}
+
+/* Footer styles */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333; /* Warna hitam untuk footer */
+  color: #fff; /* Warna teks putih */
+}
