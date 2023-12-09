@@ -10,17 +10,16 @@ body {
   overflow-x: hidden;
 }
 
-.logo h4 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
 /* Header styles with background image */
 .header {
   background-image: url("img/bola.webp"); /* Ganti dengan path gambar header Anda */
   background-size: cover;
+
   background-position: center;
-  height: 300px; /* Sesuaikan dengan tinggi gambar */
+  height: 620px; /* Sesuaikan dengan tinggi gambar */
   text-align: center;
 }
+
 nav {
   display: flex;
   background-color: white;
@@ -76,16 +75,17 @@ nav ul li a:hover {
     position: absolute;
     right: 0;
     top: 0;
-    width: 70%;
-    height: 100vh;
+    width: 50%;
+    height: 80vh;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    /* z-index: -1; */
-    background-color: rgb(228, 228, 228);
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
     transform: translateX(100%);
     transition: all 1s;
     opacity: 0;
+    box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.2), 5px 5px 20px rgba(0, 0, 0, 0.2);
   }
   .d-flex button {
     display: none;
@@ -167,9 +167,7 @@ nav ul.slide {
 /* body {
   background-color: rgba(22, 15, 15, 0.795);
 } */
-.konten {
-  background-color: #191919;
-}
+
 .container h1 {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
@@ -207,12 +205,14 @@ nav ul.slide {
   margin-top: 300px;
 }
 .left-column h2 {
-  color: white;
+  color: rgb(0, 0, 0);
   margin-bottom: 20px;
+  font-size: medium;
 }
 .right-column h2 {
-  color: white;
+  color: rgb(0, 0, 0);
   margin-bottom: 20px;
+  font-size: medium;
 }
 .left-column,
 .right-column {
