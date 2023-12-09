@@ -4,29 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website Jualan</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Header dengan background image -->
-    <header class="header">
-      <nav>
-        <ul>
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="sepatu.html">Sepatu Pria</a></li>
-          <!-- Tambahkan link ke halaman lain di sini -->
+    <nav>
+      <div class="logo">
+        <img src="img/adidas-logo.webp" alt="adidas" width="40px;" height="40px;" />
+      </div>
+      <div id="navbar-links">
+        <ul class="links">
+          <li>
+            <a href="#">Beranda</a>
+          </li>
+          <li>
+            <a href="sepatu.html">Pria</a>
+          </li>
+          <li>
+            <a href="wanita.html">Wanita</a>
+          </li>
+          <li>
+            <a href="anak-anak.html">Anak Anak</a>
+          </li>
         </ul>
-      </nav>
-    </header>
-
-    <!-- Content -->
-    <div class="content">
-      <h1>Selamat datang di Website Jualan</h1>
-      <!-- Tambahkan konten utama di sini -->
+      </div>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <div class="menu-toggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <header class="header"></header>
+    <!-- KONTEN awal -->
+    <div class="container">
+      <h1 class="text-shadow">PRODUK TERBAIK ADIDAS</h1>
+      <div class="konten">
+        <img src="img/adidas2.webp" alt="Adidas" style="width: 210px; height: 200px" />
+        <img src="img/sepatu4.webp" alt="Adidas" style="width: 210px; height: 200px" />
+        <img src="img/adidassepatu.webp" alt="Adidas" style="width: 210px; height: 200px" />
+        <img src="img/adidasssss.webp" alt="Adidas" style="width: 210px; height: 200px" />
+        <img src="img/adidas3.webp" alt="Adidas" style="width: 210px; height: 200px" />
+        <img src="img/adidassepatu1.webp" alt="Adidas" style="width: 210px; height: 200px" />
+      </div>
     </div>
+    <!-- KONTEN akhir -->
+    <!-- ABOUT AWAL -->
+    <section id="about">
+      <div class="container1">
+        <div class="left-column">
+          <!-- Konten tentang pakaian -->
+          <h2>Dapatkan Koleksi Sepatu Olahraga, Sneaker & Perlengkapan Olahraga terbaru di adidas Indonesia</h2>
+          <p>
+            Selamat datang di situs resmi adidas Indonesia di mana Anda dapat membeli perlengkapan dan aksesori olahraga berkualitas. Toko Online Resmi adidas Indonesia menyediakan produk terbaik mulai dari sepatu olahraga, dan sneaker,
+            hingga aksesori olahraga lainnya untuk semua kebutuhan Anda. Tersedia berbagai macam sepatu yang cocok untuk setiap momen dan nyaman dipakai saat berolahraga. Di Toko Online Resmi adidas Indonesia, tersedia berbagai macam produk
+            top seperti Sepatu Sepak Bola Ace & X, adidas Originals, Sepatu Training, Atasan untuk Running, Sport Bra Wanita, Aksesori Olahraga dan masih banyak lagi. Toko Online Resmi adidas terus memperbarui daftar produknya sehingga Anda
+            dapat membeli koleksi sepatu, pakaian, aksesori olahraga terbaru kami. Temukan sepatu favorit Anda mulai dari sepatu untuk pria, wanita, dan anak-anak hanya di toko online resmi kami.
+          </p>
+        </div>
+        <div class="right-column">
+          <!-- Konten tentang promosi sepatu -->
+          <h2>adidas Indonesia Menyediakan Semua Kebutuhan Olahraga Anda</h2>
+          <p>
+            Mencari perlengkapan olahraga yang dapat meningkatkan performa Anda dan lebih nyaman saat digunakan berolahraga? Hanya ada satu tempat yang dapat menyediakan semua kebutuhan olahraga Anda mulai dari sepatu hingga aksesori, yaitu
+            Toko Online Resmi adidas Indonesia. adidas Indonesia menyediakan perlengkapan olahraga mulai dari sepatu training, celana running, hingga aksesori olahraga untuk pria, wanita, dan anak-anak. Toko Online Resmi adidas Indonesia
+            menawarkan banyak deal untuk Anda yang berbelanja secara online; mulai dari gratis ongkos kirim jika Anda berbelanja minimal Rp 900.000, easy return, fast response, dan masih banyak lagi. Beli segera sepatu untuk segala jenis
+            olahraga hanya di adidas Indonesia.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <p>&copy; 2023 Website Jualan</p>
-    </footer>
+    <!-- Javaa script -->
+    <script src="script.js"></script>
   </body>
 </html>
