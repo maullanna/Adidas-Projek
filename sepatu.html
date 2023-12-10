@@ -1,83 +1,783 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sepatu Pria</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+    <link rel='stylesheet' type='text/css' media='screen' href='sepatu.css'>
 
-      body {
-        font-family: Arial, sans-serif;
-        color: #333;
-      }
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+</head>
 
-      .header {
-        background-image: url("path_to_your_image/header_bg.jpg");
-        background-size: cover;
-        background-position: center;
-        height: 300px;
-        text-align: center;
-      }
-
-      .header nav ul {
-        list-style: none;
-        padding: 10px;
-        background-color: rgba(255, 255, 255, 0.7);
-      }
-
-      .header nav ul li {
-        display: inline;
-        margin-right: 20px;
-      }
-
-      .header nav ul li a {
-        text-decoration: none;
-        color: #333;
-      }
-
-      .header nav ul li a:hover {
-        color: #000;
-      }
-
-      .content {
-        padding: 20px;
-      }
-
-      .footer {
-        text-align: center;
-        padding: 10px;
-        background-color: #333;
-        color: #fff;
-      }
-    </style>
-  </head>
-  <body>
+<body id="top">
     <!-- Header awalunn-->
     <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="sepatu.html">Sepatu Pria</a></li>
-        </ul>
-      </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="sepatu.html">Sepatu Pria</a></li>
+            </ul>
+        </nav>
     </header>
     <!-- header akhirannnnn -->
-    <div class="content">
-      <h1>Sepatu Pria</h1>
 
-      <img src="path_to_your_image/sepatu_pria_1.jpg" alt="Sepatu Pria 1" />
-      <img src="path_to_your_image/sepatu_pria_2.jpg" alt="Sepatu Pria 2" />
-    </div>
+    <!-- content sepatu pria -->
+    <main>
+        <article>
+            <section class="section product">
+                <div class="container">
 
-    <!-- Footer awalun-->
-    <footer>
-      <p>&copy; 2023 Website Jualan</p>
-    </footer>
-    <!-- footer akhirunn -->
-  </body>
+                    <ul class="product-list">
+
+                        <li class="product-item">
+                            <div class="product-card" tabindex="0">
+
+                                <figure class="card-banner">
+                                    <img src="img/product-1.jpg" width="312" height="350" loading="lazy"
+                                        alt="Running Sneaker Shoes" class="image-contain">
+
+                                    <div class="card-badge">New</div>
+
+                                    <ul class="card-action-list">
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-1">
+                                                <ion-icon name="cart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-2">
+                                                <ion-icon name="heart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-3">
+                                                <ion-icon name="eye-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-4">
+                                                <ion-icon name="repeat-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                                        </li>
+
+                                    </ul>
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-cat">
+                                        <a href="#" class="card-cat-link">Pria Running</a>
+                                    </div>
+                                    <h3 class="h5 card-title">
+                                        <a href="#">Running Switch FWD</a>
+                                    </h3>
+
+                                    <data class="card-price" value="180.85">$180.85</data>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="product-item">
+                            <div class="product-card" tabindex="0">
+
+                                <figure class="card-banner">
+                                    <img src="img/product-2.jpg" width="312" height="350" loading="lazy"
+                                        alt="Leather Mens Slipper" class="image-contain">
+
+                                    <ul class="card-action-list">
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-1">
+                                                <ion-icon name="cart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-2">
+                                                <ion-icon name="heart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-3">
+                                                <ion-icon name="eye-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-4">
+                                                <ion-icon name="repeat-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                                        </li>
+
+                                    </ul>
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-cat">
+                                        <a href="#" class="card-cat-link">Pria Lifestyle</a>
+                                    </div>
+                                    <h3 class="h5 card-title">
+                                        <a href="#">Country XLG</a>
+                                    </h3>
+
+                                    <data class="card-price" value="190.85">$190.85</data>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="product-item">
+                            <div class="product-card" tabindex="0">
+
+                                <figure class="card-banner">
+                                    <img src="img/product-3.jpg" width="312" height="350" loading="lazy"
+                                        alt="Simple Fabric Shoe" class="image-contain">
+
+                                    <div class="card-badge">New</div>
+
+                                    <ul class="card-action-list">
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-1">
+                                                <ion-icon name="cart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-2">
+                                                <ion-icon name="heart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-3">
+                                                <ion-icon name="eye-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-4">
+                                                <ion-icon name="repeat-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                                        </li>
+
+                                    </ul>
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-cat">
+                                        <a href="#" class="card-cat-link">Pria Skateboarding</a>
+                                    </div>
+                                    <h3 class="h5 card-title">
+                                        <a href="#">Heawyn</a>
+                                    </h3>
+
+                                    <data class="card-price" value="160.85">$160.85</data>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="product-item">
+                            <div class="product-card" tabindex="0">
+
+                                <figure class="card-banner">
+                                    <img src="img/product-4.jpg" width="312" height="350" loading="lazy"
+                                        alt="Air Jordan 7 Retro " class="image-contain">
+
+                                    <div class="card-badge"> -25%</div>
+
+                                    <ul class="card-action-list">
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-1">
+                                                <ion-icon name="cart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-2">
+                                                <ion-icon name="heart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-3">
+                                                <ion-icon name="eye-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-4">
+                                                <ion-icon name="repeat-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                                        </li>
+
+                                    </ul>
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-cat">
+                                        <a href="#" class="card-cat-link">Pria Basket</a>
+                                    </div>
+                                    <h3 class="h5 card-title">
+                                        <a href="#">Trae young 3</a>
+                                    </h3>
+
+                                    <data class="card-price" value="170.85">$170.85 <del>$200.21</del></data>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="product-item">
+                            <div class="product-card" tabindex="0">
+
+                                <figure class="card-banner">
+                                    <img src="img/product-5.jpg" width="312" height="350" loading="lazy"
+                                        alt="Nike Air Max 270 SE" class="image-contain">
+
+                                    <div class="card-badge">New</div>
+
+                                    <ul class="card-action-list">
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-1">
+                                                <ion-icon name="cart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-2">
+                                                <ion-icon name="heart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-3">
+                                                <ion-icon name="eye-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-4">
+                                                <ion-icon name="repeat-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                                        </li>
+
+                                    </ul>
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-cat">
+                                        <a href="#" class="card-cat-link">Pria Lifestyle</a>
+                                    </div>
+                                    <h3 class="h5 card-title">
+                                        <a href="#">NMD_s1</a>
+                                    </h3>
+
+                                    <data class="card-price" value="120.85">$120.85</data>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="product-item">
+                            <div class="product-card" tabindex="0">
+
+                                <figure class="card-banner">
+                                    <img src="img/product-6.jpg" width="312" height="350" loading="lazy"
+                                        alt="Adidas Sneakers Shoes" class="image-contain">
+                                    <div class="card-badge">-10%</div>
+
+                                    <ul class="card-action-list">
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-1">
+                                                <ion-icon name="cart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-2">
+                                                <ion-icon name="heart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-3">
+                                                <ion-icon name="eye-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-4">
+                                                <ion-icon name="repeat-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                                        </li>
+
+                                    </ul>
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-cat">
+                                        <a href="#" class="card-cat-link">Pria Skateboarding</a>
+                                    </div>
+                                    <h3 class="h5 card-title">
+                                        <a href="#">Katana</a>
+                                    </h3>
+
+                                    <data class="card-price" value="100.85">$100.85 <del>$150.20</del></data>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="product-item">
+                            <div class="product-card" tabindex="0">
+
+                                <figure class="card-banner">
+                                    <img src="img/product-7.jpg" width="312" height="350" loading="lazy"
+                                        alt="Nike Basketball shoes" class="image-contain">
+
+                                    <ul class="card-action-list">
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-1">
+                                                <ion-icon name="cart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-2">
+                                                <ion-icon name="heart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-3">
+                                                <ion-icon name="eye-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-4">
+                                                <ion-icon name="repeat-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                                        </li>
+
+                                    </ul>
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-cat">
+                                        <a href="#" class="card-cat-link">Pria Running</a>
+                                    </div>
+                                    <h3 class="h5 card-title">
+                                        <a href="#">Adizero SL</a>
+                                    </h3>
+
+                                    <data class="card-price" value="120.85">$120.85</data>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="product-item">
+                            <div class="product-card" tabindex="0">
+
+                                <figure class="card-banner">
+                                    <img src="img/product-8.jpg" width="312" height="350" loading="lazy"
+                                        alt="Simple Fabric Shoe" class="image-contain">
+
+                                    <ul class="card-action-list">
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-1">
+                                                <ion-icon name="cart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-2">
+                                                <ion-icon name="heart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-3">
+                                                <ion-icon name="eye-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-4">
+                                                <ion-icon name="repeat-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                                        </li>
+
+                                    </ul>
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-cat">
+                                        <a href="#" class="card-cat-link">Pria Futsal</a>
+                                    </div>
+                                    <h3 class="h5 card-title">
+                                        <a href="#">X CrazyFast.3 INDOOR</a>
+                                    </h3>
+
+                                    <data class="card-price" value="100.85">$100.85</data>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="product-item">
+                            <div class="product-card" tabindex="0">
+
+                                <figure class="card-banner">
+                                    <img src="img/product-9.jpg" width="312" height="350" loading="lazy"
+                                        alt="Simple Fabric Shoe" class="image-contain">
+                                    <div class="card-badge">New</div>
+
+                                    <ul class="card-action-list">
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-1">
+                                                <ion-icon name="cart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-2">
+                                                <ion-icon name="heart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-3">
+                                                <ion-icon name="eye-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-4">
+                                                <ion-icon name="repeat-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                                        </li>
+
+                                    </ul>
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-cat">
+                                        <a href="#" class="card-cat-link">Pria Football</a>
+                                    </div>
+                                    <h3 class="h5 card-title">
+                                        <a href="#">X CrazyFast.3 INDOOR</a>
+                                    </h3>
+
+                                    <data class="card-price" value="100.85">$100.85</data>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="product-item">
+                            <div class="product-card" tabindex="0">
+
+                                <figure class="card-banner">
+                                    <img src="img/product-10.jpg" width="312" height="350" loading="lazy"
+                                        alt="Simple Fabric Shoe" class="image-contain">
+                                    <div class="card-badge">-20%</div>
+
+                                    <ul class="card-action-list">
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-1">
+                                                <ion-icon name="cart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-2">
+                                                <ion-icon name="heart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-3">
+                                                <ion-icon name="eye-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-4">
+                                                <ion-icon name="repeat-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                                        </li>
+
+                                    </ul>
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-cat">
+                                        <a href="#" class="card-cat-link">Pria Football</a>
+                                    </div>
+                                    <h3 class="h5 card-title">
+                                        <a href="#">Predator Accuracy.1 FG</a>
+                                    </h3>
+
+                                    <data class="card-price" value="140.00">$140.00 <del>$180.00</del></data>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="product-item">
+                            <div class="product-card" tabindex="0">
+
+                                <figure class="card-banner">
+                                    <img src="img/product-11.jpg" width="312" height="350" loading="lazy"
+                                        alt="Simple Fabric Shoe" class="image-contain">
+
+                                    <ul class="card-action-list">
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-1">
+                                                <ion-icon name="cart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-2">
+                                                <ion-icon name="heart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-3">
+                                                <ion-icon name="eye-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-4">
+                                                <ion-icon name="repeat-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                                        </li>
+
+                                    </ul>
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-cat">
+                                        <a href="#" class="card-cat-link">Pria Lifestyle</a>
+                                    </div>
+                                    <h3 class="h5 card-title">
+                                        <a href="#">ADIDAS Rivalry High SCRATCHY</a>
+                                    </h3>
+
+                                    <data class="card-price" value="130.85">$130.85</data>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="product-item">
+                            <div class="product-card" tabindex="0">
+
+                                <figure class="card-banner">
+                                    <img src="img/product-12.jpg" width="312" height="350" loading="lazy"
+                                        alt="Simple Fabric Shoe" class="image-contain">
+                                    <div class="card-badge">New</div>
+
+                                    <ul class="card-action-list">
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-1">
+                                                <ion-icon name="cart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-2">
+                                                <ion-icon name="heart-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-3">
+                                                <ion-icon name="eye-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                                        </li>
+
+                                        <li class="card-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-4">
+                                                <ion-icon name="repeat-outline"></ion-icon>
+                                            </button>
+
+                                            <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                                        </li>
+
+                                    </ul>
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-cat">
+                                        <a href="#" class="card-cat-link">Pria Basket</a>
+                                    </div>
+                                    <h3 class="h5 card-title">
+                                        <a href="#">Forum MID Shoes</a>
+                                    </h3>
+
+                                    <data class="card-price" value="200.85">$200.85</data>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+            <!-- Footer awalun-->
+            <footer>
+                <p>&copy; 2023 Website Jualan</p>
+            </footer>
+            <!-- footer akhirunn -->
+
+            <!-- 
+    - custom js link
+  -->
+            <script src="./assets/js/script.js"></script>
+
+            <!-- 
+    - ionicon link
+  -->
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
