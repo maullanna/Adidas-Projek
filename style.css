@@ -140,9 +140,68 @@ nav ul.slide {
   width: 300px;
   height: 300px;
   margin: 5% auto 0;
+  perspective: 1000px;
+}
+
+.konten {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d;
+  animation: putar 20s linear infinite;
+}
+
+.rotate-img {
+  position: absolute;
+  width: 210px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.3s ease-out; /* Efek transisi */
+  cursor: pointer; /* Mengubah kursor saat dihover */
+}
+
+/* Baru */
+.rotate-img:hover {
+  transform: scale(1.1); /* Efek zoom saat hover */
+  box-shadow: 0 0 20px rgba(15, 14, 14, 0.7); /* Efek cahaya */
+}
+
+.rotate-img:not(:hover) {
+  transform: scale(1); /* Kembali ke ukuran semula */
+  box-shadow: none; /* Hilangkan efek cahaya saat tidak dihover */
+}
+
+.rotate-img:hover {
+  transform: scale(1.1); /* Efek zoom saat hover */
+}
+
+@keyframes putar {
+  100% {
+    transform: rotateY(1turn);
+  }
+}
+
+.rotate-img:nth-child(1) {
+  transform: rotateY(0deg) translateZ(160px);
+}
+
+.rotate-img:nth-child(2) {
+  transform: rotateY(60deg) translateZ(160px);
+}
+
+/* Tambahkan transformasi untuk gambar lainnya di sini */
+
+/* 
+.container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 5% auto 0;
   transform-style: preserve-3d;
   perspective: 1000px;
-  /* transform: rotateX(20deg) rotateZ(20deg); */
+  overflow: hidden;
+  /* transform: rotateX(20deg) rotateZ(20deg); *
 }
 .konten img {
   position: absolute;
@@ -163,7 +222,7 @@ nav ul.slide {
   100% {
     transform: rotateY(365deg);
   }
-}
+} */
 /* body {
   background-color: rgba(22, 15, 15, 0.795);
 } */
@@ -171,8 +230,8 @@ nav ul.slide {
 .container h1 {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  text-shadow: 7px 2px 4px rgba(145, 139, 139, 0.5); /* Efek shadow pada lapisan belakang */
-  color: white;
+  text-shadow: 4px 2px 4px rgba(125, 125, 228, 0.5); /* Efek shadow pada lapisan belakang */
+  color: rgb(0, 0, 0);
 }
 
 .konten img:nth-child(1) {
@@ -195,14 +254,13 @@ nav ul.slide {
 }
 /* ISI Content IMage  */
 .about {
-  padding-top: 9rem /* atau bisa pake 144px*/;
+  padding-top: 200px /* atau bisa pake 144px*/;
   padding-bottom: 8rem /*128px*/;
 }
 .container1 {
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
-  margin-top: 300px;
 }
 .left-column h2 {
   color: rgb(0, 0, 0);
@@ -239,17 +297,94 @@ nav ul.slide {
     order: initial; /* Kembalikan urutan default pada mobile */
   }
 }
-/* Media query untuk tampilan desktop
-@media screen and (min-width: 769px) {
-  .left-column,
-  .right-column {
-    flex: 1;
-    margin-bottom: 0;
-  }
+/* FOOTer */
+.content {
+  display: flex;
+  gap: 5px; /* Jarak antar kolom */
+  margin-top: 110px;
+  background-color: #d8d6d6;
+  height: 400px;
+  background-size: 40px;
+}
 
-  .left-column {
-    margin-right: 20px;
-  }
-} */
+.footer-col {
+  flex: 1;
+  margin-top: 100px;
+  justify-content: space-between;
+}
 
-/* About PARAGRAF awal */
+.footer-col h4 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: green;
+}
+
+/* Responsif */
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-col {
+    width: 100%;
+  }
+}
+
+/* footer ke 2 */
+#footer {
+  background-color: #d8d6d6;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer img {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+#footer h4 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-right: 50px;
+  color: white;
+}
+
+.copyright h4 {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+#footer img {
+  width: 20px;
+  height: 20px;
+}
+
+#footer h4 {
+  color: black; /* Sesuaikan warna teks dengan latar belakang yang lebih baik terbaca */
+}
