@@ -14,7 +14,6 @@ body {
 .header {
   background-image: url("img/bola.webp"); /* Ganti dengan path gambar header Anda */
   background-size: cover;
-
   background-position: center;
   height: 620px; /* Sesuaikan dengan tinggi gambar */
   text-align: center;
